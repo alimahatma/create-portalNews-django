@@ -1,66 +1,61 @@
 
+{% extends 'base.html' %}
+{% block content %}
 
-    <main class="container mt-3 mb-5">
+<main class="container mt-3 mb-5">
 
-        <div class="row my-3">
-            <!--Left-->
-            <div class="col-md-7">
-                <img src="" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">The First</h5>
-                    <hr/>
-                    <p class="card-text"><a href="/" class="btn btn-sm btn-primary">Read Full</a></p>
-                </div>
-            </div>
-        </div>
-        <!--Right-->
-        <div class="col-md-5" style="max-height: 450x; overflow:auto;">
-            <!--News Box-->
-            <div class="card">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="" class="card-img-top" alt="">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-tex"><a href="/" class="btn btn-sm btn-primary">Read Full</a></p>
-                        </div>
-                    </div>
-                </div>
+<div class="row my-3">
+
+    <!--Left-->
+    <div class="col-md-7">
+        <div class="card mb-3">
+            <img src="#" class="card-img-top" alt="#">
+            <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
                 <hr/>
-    
+                <p class="card-text"><a href="#" class="btn btn-sm btn-primary">Read Full</a></p>
             </div>
         </div>
-        <!--Category Wise News-->
-        <h3 class="border-bottom pb-1"><a href="#" class="float-right btn btn-sm btn-dark">In this Category</a></h3>
-        <div class="row my-4">
-            
-                <!-- News box -->
-                <div class="col-md-3">
-                    <div class="card mb-3 shadow">
+    </div>
+
+    <!--Right-->
+    <div class="col-md-5" style="max-height: 450px; overflow:auto;">
+        
+        <!-- News Box -->
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
                     <img src="#" class="card-img-top" alt="#">
+                </div>
+                <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">#</h5>
+                        <h5 class="card-title">Card Title 2</h5>
                         <hr/>
-                        <p class="card-text"><a href="#" class="btn btn-sm btn-primary">Read Full</a></p>
-                    </div>
+                        <p class="card-text" ><a href="#" class="btn btn-sm btn-primary">Read Full</a></p>
                     </div>
                 </div>
+            </div>
         </div>
-        
-    {% block content %}
-    {% endblock %}
-        
-    </main>
-    <hr/>
-    <footer class="text-muted">
-        <div class="container">
-            <p class="float-right">
-                <a href="#">Bact to Top</a>
-            </p>
-            <p>Example is &copy; Bootstrap!</p>
-            <p>New Bootsrap <a href="#">Visit Page</a> or read <a href="#">Getting started</a>.</p>
-        </div>
-    </footer>
+        <hr/>
+    </div>
+</div>
 
+<!-- Category Wise News -->
+<h3 class="border-bottom pb-1"># <a href="#" class="float-right btn btn-sm btn-dark">This is Categori</a></h3>
+<div class="row my-4">
+   
+    <!-- News Box -->
+    <div class="col-md-3">
+        <div class="card mb-3 shadow">
+            <img src="#" class="card-img-top" alt="#">
+            <div class="card-body">
+                <h5 class="card-title">Card Title 3</h5>
+                <hr/>
+                <p class="card-text"><a href="#" class="btn btn-sm btn-primary"> Read Full</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+{% endblock %}
